@@ -10,6 +10,6 @@ RUN apt install -y wget
 RUN wget www.reddit.com
 RUN mv index.html /var/www/html
 
-run service nginx restart
+RUN service nginx restart
 
 CMD ["nginx","-g","daemon off;"]
